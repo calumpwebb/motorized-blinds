@@ -17,23 +17,30 @@ Battery-powered motorized blinds controlled via ESP32-C6 with Matter/HomeKit int
 
 ## Development Environment
 
-**Arduino CLI:**
+**PlatformIO (Primary):**
 
 ```bash
-# Compile firmware
-arduino-cli compile --fqbn esp32:esp32:XIAO_ESP32C6 .
+# Build firmware
+pio run
 
-# Upload to board (find port with: ls /dev/cu.usb*)
-arduino-cli upload --fqbn esp32:esp32:XIAO_ESP32C6 -p /dev/cu.usbmodem* .
+# Upload to board (auto-detects port)
+pio run --target upload
 
-# Monitor serial output
-arduino-cli monitor -p /dev/cu.usbmodem* -c baudrate=115200
+# Monitor serial output (115200 baud)
+pio device monitor
+
+# Build + Upload + Monitor in one command
+pio run --target upload && pio device monitor
+
+# Clean build files
+pio run --target clean
 ```
 
-**Arduino IDE 2.x:**
-
-- Board: "XIAO_ESP32C6"
-- USB CDC On Boot: Enabled (for serial debugging)
+**Board Configuration:**
+- Environment: `seeed_xiao_esp32c6`
+- Platform: `espressif32`
+- Framework: `arduino`
+- Monitor speed: `115200`
 
 ## GPIO Pin Assignments (ESP32-C6)
 
