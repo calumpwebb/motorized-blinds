@@ -12,7 +12,7 @@ Battery-powered motorized blinds controlled via ESP32-C6 with Matter/HomeKit int
 
 - **MCU:** Seeed XIAO ESP32-C6 (pre-soldered)
 - **Motor:** BRINGSMART 5840-31ZY 12V 40RPM self-locking worm gear
-- **Battery:** 3S2P Samsung 50E 21700 cells (11.1V, 10,000mAh)
+- **Battery:** 3S2P Samsung 50E 21700 cells (11.1V, 9,800mAh)
 - **Target runtime:** 2-6 months between charges
 
 ## Development Environment

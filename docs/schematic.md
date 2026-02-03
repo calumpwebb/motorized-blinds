@@ -17,7 +17,7 @@ flowchart TB
     end
 
     subgraph BATTERY["3S2P Battery Pack"]
-        BAT["6x Samsung 50E 21700<br/>11.1V nom / 12.6V max<br/>10,000mAh"]
+        BAT["6x Samsung 50E 21700<br/>11.1V nom / 12.6V max<br/>9,800mAh"]
     end
 
     subgraph POWER_REG["Power Regulation"]

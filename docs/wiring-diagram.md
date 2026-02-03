@@ -67,7 +67,7 @@
 │                             │     │
 │  Wiring: 3S2P               │     │
 │  Voltage: 11.1V nom         │     │
-│  Capacity: 10,000mAh        │     │
+│  Capacity: 9,800mAh         │     │
 └─────────────────────────────┘     │
                                     │
          POWER OUTPUT (P+ and P-)   │

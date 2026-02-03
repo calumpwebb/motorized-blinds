@@ -13,7 +13,7 @@ Battery-powered motorized blinds controlled via ESP32-C6 with Matter/HomeKit int
 | Blind travel distance | 380cm |
 | Travel time | ~1 minute (40 RPM motor) |
 | Force required | 36.75N (3.75kg load) |
-| Battery | 3S2P 21700 (11.1V nominal, 10,000mAh) |
+| Battery | 3S2P 21700 (11.1V nominal, 9,800mAh) |
 | Charging | USB-C PD (15V or 20V) |
 | Control | Matter protocol (works with Apple Home, Google, Alexa) |
 
@@ -54,7 +54,7 @@ Battery-powered motorized blinds controlled via ESP32-C6 with Matter/HomeKit int
 │                         3S2P Battery Pack                                     │
 │                    6x Samsung 50E 21700 cells                                 │
 │                    11.1V nominal / 12.6V max                                  │
-│                    10,000mAh capacity                                         │
+│                    9,800mAh capacity                                          │
 └──────────────────────────────────┬───────────────────────────────────────────┘
                                    │ 11-12.6V
                     ┌──────────────┴──────────────┐
@@ -147,8 +147,8 @@ Travel time for 380cm = 3800mm / 62.8mm/s ≈ 60 seconds
 
 **Why this configuration:**
 - **3S (11.1V nominal)**: Matches 12V motor, common voltage for electronics
-- **2P (10,000mAh)**: Provides weeks/months of runtime
-- **Samsung 50E**: High capacity (5000mAh), reliable, 9.8A continuous discharge
+- **2P (9,800mAh)**: Provides weeks/months of runtime
+- **Samsung 50E**: High capacity (4900mAh), reliable, 9.8A continuous discharge
 
 **Runtime estimate:**
 ```
@@ -261,8 +261,8 @@ Daily usage:
 - 23.97 hours sleep × 0.06mA = 1.4mAh
 - Total: ~22mAh/day
 
-Battery capacity: 10,000mAh
-Theoretical runtime: 10,000 / 22 = 454 days
+Battery capacity: 9,800mAh
+Theoretical runtime: 9,800 / 22 = 445 days
 
 Real world (accounting for inefficiencies, WiFi wake-ups, etc.):
 Estimate 2-6 months between charges
